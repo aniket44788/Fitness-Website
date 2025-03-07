@@ -10,10 +10,10 @@ const Navbar = () => {
         <h4 className="name-h4">  ANIKET BHARDWAJ </h4>
       </div>
       <div className="heading-1">
-        <h5 className="heading-1-h3" > About </h5>
-        <h5 className="heading-1-h3" > Resume </h5>
-        <h5 className="heading-1-h3" > Projects </h5>
-        <h5 className="heading-1-h3" > Contact </h5>
+        <h5 className="heading-1-h3" > ABOUT </h5>
+        <h5 className="heading-1-h3" > RESUME </h5>
+        <h5 className="heading-1-h3" > PROJECTS </h5>
+        <h5 className="heading-1-h3" > CONTACT </h5>
       </div>
     </nav>
   );
