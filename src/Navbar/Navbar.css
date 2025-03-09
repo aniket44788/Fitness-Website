@@ -32,6 +32,7 @@
   /* Name Text */
   .name-h4 {
     padding-left: 10px;
+    font-size: 11px;
   }
   
   /* Logo / Title */
@@ -75,7 +76,7 @@
   }
   .heading-1-h3 {
     font-family: "Poppins", "Arial Narrow Bold", sans-serif; /* Modern & clean font */
-    font-size: 18px; /* Adjust size for better visibility */
+    font-size: 12px; /* Adjust size for better visibility */
     font-weight: 600; /* Slightly bold for emphasis */
     color: #1a1a2e; /* Deep navy for a premium feel */
     letter-spacing: 2px; /* Improved letter spacing */
@@ -115,7 +116,7 @@
     }
   
     .name-h4 {
-      font-size: 12px;
+      font-size: 8px;
     }
   
     .heading-1 {
@@ -123,7 +124,7 @@
         height: 60px;
         flex-direction: row;
         align-items: center;
-        font-size: 20px;
+        font-size: 8px;
       }
       
   
