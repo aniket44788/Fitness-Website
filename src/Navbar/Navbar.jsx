@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import "../Navbar/Navbar.css";
 import box from "../Navbar/box.png"
-
 const Navbar = () => {
   return (
     <nav className="navbar">
