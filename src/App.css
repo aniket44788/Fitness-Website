@@ -1,289 +1,321 @@
 /* CSS FOR NAVBAR */
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Navbar Styling */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #ffffff;
-    color: #333;
-    box-shadow: 0px 4px 8px rgba(113, 90, 90, 0.1);
-    width: 100%;
-    height: 70px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    position: sticky;
-    top: 0;
-    
-  }
-  
-  /* Navbar Hover Effect */
-  .navbar:hover {
-    background: #e0e0e0; /* Subtle color change */
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Name Box */
-  .name-box {
-    width: 10%;
-    height: 30px;
-  }
-  
-  /* Name Text */
-  .name-h4 {
-    padding-left: 10px;
-    font-size: 11px;
-  }
-  
-  /* Logo / Title */
-  .Name {
-    width: 20%;
-    padding-left: 10px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #1a1a2e;
-    font-family: "Russo One", "Orbitron", Haettenschweiler, "Arial Narrow Bold",
-      sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, text-shadow 0.3s;
-  }
-  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  
-  /* Centered Heading Section */
-  .heading-1 {
-    width: 50%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    cursor: pointer;
-    font-size: 25px;
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+/* Navbar Styling */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  color: #333;
+  box-shadow: 0px 4px 8px rgba(113, 90, 90, 0.1);
+  height: 70px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: sticky;
+  top: 0;
+  border: 2px solid red;
+}
+
+/* Navbar Hover Effect */
+.navbar:hover {
+  background: #e0e0e0; /* Subtle color change */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Name Box */
+.name-box {
+  width: 10%;
+  height: 30px;
+}
+
+/* Name Text */
+.name-h4 {
+  padding-left: 10px;
+  font-size: 11px;
+}
+
+/* Logo / Title */
+.Name {
+  width: 20%;
+  padding-left: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #1a1a2e;
+  font-family: "Russo One", "Orbitron", Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out,
+    text-shadow 0.3s;
+}
+
+/* Centered Heading Section */
+.heading-1 {
+  width: 80%;
+  /* border: 2px solid blue; */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  font-size: 25px;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Heading Hover Effect */
+.heading-1:hover {
+  transform: translateY(-2px);
+  color: #ff4d00;
+}
+.heading-1-h3 {
+  font-family: "Poppins", "Arial Narrow Bold", sans-serif; /* Modern & clean font */
+  font-size: 12px; /* Adjust size for better visibility */
+  font-weight: 600; /* Slightly bold for emphasis */
+  color: #1a1a2e; /* Deep navy for a premium feel */
+  letter-spacing: 2px; /* Improved letter spacing */
+  text-transform: uppercase; /* Gives a bold look */
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out,
+    transform 0.3s;
+}
+
+/* Hover Effect */
+.heading-1-h3:hover {
+  color: #ff4d00; /* Vibrant orange for interaction */
+  text-shadow: 3px 3px 6px rgba(255, 77, 0, 0.5); /* Subtle glow */
+  transform: translateY(-2px); /* Slight upward movement */
+}
+
+/* 📱 Mobile Devices (max-width: 600px) */
+@media (min-width: 250px) and (max-width: 600px) {
+  .navbar {
+    width: 140%;
+    flex-direction: row;
+    height: 70px;
+    padding: 10px;
+    border: 2px solid green;
   }
-  
-  /* Heading Hover Effect */
-  .heading-1:hover {
-    transform: translateY(-2px);
-    color: #ff4d00;
-  }
-  .heading-1-h3 {
-    font-family: "Poppins", "Arial Narrow Bold", sans-serif; /* Modern & clean font */
-    font-size: 12px; /* Adjust size for better visibility */
-    font-weight: 600; /* Slightly bold for emphasis */
-    color: #1a1a2e; /* Deep navy for a premium feel */
-    letter-spacing: 2px; /* Improved letter spacing */
-    text-transform: uppercase; /* Gives a bold look */
-    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out, transform 0.3s;
-  }
-  
-  /* Hover Effect */
-  .heading-1-h3:hover {
-    color: #ff4d00; /* Vibrant orange for interaction */
-    text-shadow: 3px 3px 6px rgba(255, 77, 0, 0.5); /* Subtle glow */
-    transform: translateY(-2px); /* Slight upward movement */
-  }
-  
-  
-  /* 📱 Mobile Devices (max-width: 600px) */
-  @media (max-width: 600px) {
-    .navbar {
-      width: 100%;
-      flex-direction: row;
-      height: auto;
-      padding: 10px;
-    }
 
   .name {
-      width: 30%;
-      text-align: center;
-      font-size: 15px;
-      justify-content: left;
-      padding-left: 10px;
-    }
-
-    .name-box {
-      width: 25%;
-      height: 20px;
-      /* padding-left: 15px; */
-    }
-  
-    .name-h4 {
-      font-size: 8px;
-    }
-  
-    .heading-1 {
-        width: 40%;
-        height: 60px;
-        flex-direction: row;
-        align-items: center;
-        font-size: 6px;
-      }
-      
-  
-    .heading-1-h3 {
-      font-size: 12px;
-      padding: 8px 0;
-    }
+    width: 30%;
+    text-align: center;
+    font-size: 15px;
+    justify-content: left;
+    padding-left: 10px;
   }
-  
-  /* 📟 Tablets (601px - 1024px) */
-  @media (max-width: 1024px) {
-    .navbar {
-      width: 100%;
-      flex-direction: row;
-      height: auto;
-      padding: 10px;
-    }
-  
-    .name {
-      width: 30%;
-      text-align: center;
-      font-size: 15px;
-      justify-content: left;
-      padding-left: 10px;
-    }
-  
-    .heading-1 {
-      width: 70%;
-      flex-direction: row;
-      align-items: center;
-    }
-  
-    .heading-1 h3 {
-      font-size: 8px;
-      padding: 10px 0;
-    }
-  }
-  
-  /* 💻 Laptops (1025px - 1366px) */
-  @media (max-width: 1366px) {
-    .navbar {
-      width: 100%;
-      height: 70px;
-    }
-  
-    .name {
-      width: 20%;
-      height: auto;
-      font-size: 26px;
-    }
-  
-    .heading-1 {
-      width: 70%;
-      height: auto;
-      padding-right: 10px;
-    }
-  
-    .heading-1 h3 {
-      font-size: 20px;
-    }
-  }
-  
 
-  /* CSS FOR CONTENT  */
+  .name-box {
+    width: 25%;
+    height: 20px;
+    /* padding-left: 15px; */
+  }
 
-  .content{
+  .name-h4 {
+    font-size: 8px;
+  }
+
+  .heading-1 {
+    width: 40%;
+    height: 60px;
+    flex-direction: row;
+    align-items: center;
+    font-size: 6px;
+  }
+
+  .heading-1-h3 {
+    font-size: 12px;
+    padding: 8px 0;
+  }
+}
+
+/* 📟 Tablets (601px - 1024px) */
+@media (max-width: 1024px) {
+  .navbar {
     width: 100%;
-    height:700px;
+    flex-direction: row;
+    height: auto;
+    padding: 10px;
+  }
+
+  .name {
+    width: 30%;
+    text-align: center;
+    font-size: 15px;
+    justify-content: left;
+    padding-left: 10px;
+  }
+
+  .heading-1 {
+    width: 70%;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .heading-1 h3 {
+    font-size: 8px;
+    padding: 10px 0;
+  }
+}
+
+/* 💻 Laptops (1025px - 1366px) */
+@media (max-width: 1366px) {
+  .navbar {
+    width: 100%;
+    height: 70px;
+  }
+
+  .name {
+    width: 20%;
+    height: auto;
+    font-size: 26px;
+  }
+
+  .heading-1 {
+    width: 70%;
+    height: auto;
+    padding-right: 10px;
+  }
+
+  .heading-1 h3 {
+    font-size: 20px;
+  }
+}
+
+/* CSS FOR CONTENT  */
+
+.content {
+  width: 100%;
+  height: 600px;
+  /* background: rgb(2, 0, 36); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img {
+  width: 40%;
+  height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-img {
+  width: 300px;
+  height: 300px;
+  z-index: 0;
+  border-radius: 50%;
+  background-size: 40%;
+}
+.content-in {
+  width: 0%;
+  height: 500px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border-radius: 10px;
+}
+.content-in1 {
+  width: 400px;
+  height: 400px;
+  /* background-color: rgb(175, 0, 244); */
+  border: 2px solid black;
+}
+@media (min-width: 200px) and (max-width: 600px) {
+  .content {
+    width: 100%;
+    height: 600px;
+    /* background: rgb(39, 30, 197); */
+    /* border: 2px solid rgb(115, 128, 0); */
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 3px solid blue; */
-}
-
-.content-1{
-    width: 50%;
-    height: 800px;
-    background-color: rgb(230,218,206);
-    border: 2px solid rgb(30, 255, 0);
-}
-.content-in{
-    width: 900px;
-    height: 470px;
-    /* background-color: rgb(0, 26, 255); */
-    margin-left: 430px;
-    margin-top: 70px;
-    z-index: 10;
-    display: flex;
-    justify-content: center;   
-    /* border: 3px solid brown; */
-}
-
-.content-in1 {
-    /* border: 2px solid rgb(68, 255, 0); */
-    width: 45%;
-    height: 500px;
-    background-color: #F4ECE6;
-    /* box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4);  */
-    border-radius: 12px;
-    transition: all 0.3s ease-in-out; 
-}
-
-.content-in1:hover {
-    box-shadow: 0 0  25px rgba(252, 255, 223, 0.8);
-    transform: scale(1.02); 
-    cursor: pointer; 
-}
-
-.content-in2{
-    /* border: 2px solid green; */
-    width: 55%;
-    height: 500px;
-    background-color: white;
-
-}
-.content-2{
-    width: 50%;
-    height: 700px;
-    background-color: white;
-    border: 2px solid rgb(255, 0, 0);
-    z-index: -1;
-}
-
-/* 📱 Mobile (max-width: 600px) */
-@media (max-width: 600px) {
-    .content {
-      width: 200%;
-      height: 700px;
-      flex-direction: column;
-      display: flex;
-      align-items: start;
-    }
-   
-  
-    .content-in {
-        width: 40%;
-        height: 580px;
-        margin-left: 100px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-  
-    .content-in1{
-        width: 170%;      
-       height: 400px;
-
-    }
-    .content-in2 {
-        
-      width: 170%;
-      height: 150px;
-
-    }
+    /* background-color: rgb(225, 0, 255); */
   }
+  .content-in {
+    width: 300px;
+    height: 500px;
+    border: 2px solid black;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for glow and scaling */
+  }
+  
+  /* Glowing effect on hover */
+  .content-in:hover {
+    box-shadow: 0px 0px 15px 5px rgba(255, 77, 0, 0.7); /* Glowing effect with orange color */
+    transform: scale(1.00); /* Slightly scale up for a 3D effect */
+  }
+  
+  .content-in1 {
+   /* background-color: rgb(102, 128, 0); */
+   width: 100%;
+   height: 100px;
+  }
+  .img {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-img {
+    width: 80%;
+    height: 70%;
+    gap: 20px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1444px) {
+  .content {
+    width: 100%;
+    height: 600px;
+    background: rgb(2, 0, 36);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img {
+    width: 40%;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+  }
+  .img-img {
+    width: 260px;
+    height: 260px;
+    z-index: 0;
+    border-radius: 50%;
+    background-size: 40%;
+    margin-right: 50px;
+  }
+  .content-in {
+    width: 70%;
+    height: 500px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-radius: 10px;
+  }
+  .content-in1 {
+    width: 350px;
+    height: 350px;
+    background-color: rgb(32, 0, 176);
+    margin-right: 80px;
+  }
+}
